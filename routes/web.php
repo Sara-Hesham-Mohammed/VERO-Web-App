@@ -6,10 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/welc', function () {
-    return ' welc';
-});
-
 Route::get('/withID/{id}', function ($id) {
     return "welc $id";
 });
@@ -35,4 +31,5 @@ Route::prefix("prof")->group(
             return "welc this'll show the prof/smth endpoint";
         });
 
-    });
+});
+
